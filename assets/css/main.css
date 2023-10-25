@@ -52,7 +52,7 @@
 .nav-list li{
     text-align: center;
 }
-.nav-link a:link,.nav-link:link{
+.nav-list li a:link,.nav-link:link{
     color: var(--darkBlueColor);
     text-transform: uppercase;
 }
@@ -158,10 +158,10 @@
     
     justify-content: center;
 }
-/* .img-tabs{
+.img-tabs{
     width: 500px;
     height: 300px;
-} */
+}
 .card-tabs{
     margin-left: auto;
     margin-right: auto;
@@ -185,11 +185,14 @@
     left: -5%;
 }
 input{
-    width: 250px;
+    width: 200px;
 }
 textarea{
-    width: 500px;
+    width: 420px;
     
+}
+.form-container,.form-container .card,input{
+    background-color: var(--lightBlueColor);
 }
 /* .menu-tap{
     float: right;
