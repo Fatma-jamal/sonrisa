@@ -1,0 +1,203 @@
+:root{
+    --darkBlueColor:#2e3192;
+    --orangeColor:#f4582f;
+    --darkPinkColor:#ef2853;
+    --lightPinkColor:#fff2f2;
+    --darkGrayColor:#8a8a8a;
+    --lightBlueColor:#eef7ff;
+    --darkRedColor:#dd3333;
+    --whiteColor:white;
+}
+.menu-icon{
+    background-color: var(--lightPinkColor);
+    float: right;
+    border: none;
+    height: 40px;
+}
+.container-links{
+    direction: rtl;
+}
+.container-links a:link{
+    color:rgb(224, 221, 221);
+    text-align: right;
+    font-size: 13px;
+}
+.fontSize{
+    font-size: 13px;
+    color:rgb(224, 221, 221);
+
+
+}
+.nav{
+    clear: both;
+}
+.navbar-toggler{
+    display: block;
+
+}
+.menu-icon span{
+    color: var(--darkBlueColor);
+}
+.menu-sign{
+    color:var(--darkBlueColor);
+}
+.custom-button {
+    background-color: black;
+    float: right;
+  }
+.nav-logo{
+    width: 80px;
+    height: 50px;
+}
+.nav-list li{
+    text-align: center;
+}
+.nav-link a:link,.nav-link:link{
+    color: var(--darkBlueColor);
+    text-transform: uppercase;
+}
+.nav-list{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+/* .search{
+    color: var(--darkBlueColor);
+} */
+.flex{
+    display: flex;
+    margin-right: 2%;
+}
+.flex-prop{
+    justify-content: center;
+}
+.menuIcon-space{
+
+}
+.flex-cards{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-top: 4%;
+}
+.card1,.card2,.card3{
+    margin: 15px;
+    width: 32rem;
+}
+/* .prev-sign{
+    background-color: var(--whiteColor);
+    color: var(--darkBlueColor);
+} */
+.card-title,.card-link,.search,.dentalTitle{
+    color: var(--darkBlueColor);
+}
+.card-text,.list-group-item{
+    color: var(--darkGrayColor);
+}
+.card-link{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.border-none{
+    border: none;
+}
+.list-item::before{
+    content: "+  ";
+    color: var(--orangeColor);
+    font-weight: bold;
+}
+
+.card3,.working-out-list{
+    background-color: var(--lightPinkColor);
+}
+.btn-primary,.btn-primary:hover{
+    background-color: var(--darkBlueColor);
+    border-bottom-left-radius: var(--bs-border-radius);
+    border-bottom-right-radius: var(--bs-border-radius);
+    
+}
+.working-out-list span{
+    color: var(--darkPinkColor);
+}
+.dentalCard{
+    background-color: var(--lightBlueColor);
+}
+.dentalCard-img{
+    border-radius: var(--bs-border-radius);
+}
+.dentalSub,.expertsSub{
+    color: var(--darkRedColor);
+    text-transform: uppercase;
+
+}
+.andrea,.container-fluid span
+{
+    color: var(--orangeColor);
+}
+.dentalText{
+    color: var(--darkGrayColor);
+}
+.card-contain img{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.contain-bg{
+    background-color: var(--darkBlueColor);
+}
+.btn-light{
+    color: var(--darkBlueColor);
+    border-radius: var(--bs-border-radius);
+    text-transform: uppercase;
+    padding: 15px;
+    font-weight: bold;
+}
+.container-fluid,.contain-div{
+    
+    justify-content: center;
+}
+.img-tabs{
+    width: 500px;
+    height: 300px;
+}
+.card-tabs{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.card-tabs .card,.tabs-container{
+    background-color: var(--lightPinkColor);
+
+}
+.shareIcon{
+    background-color: var(--darkBlueColor);
+    color: var(--whiteColor);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding: 5px;
+    padding-top: 9px;
+    border-radius: 4px;
+    position: absolute;
+    top:5%;
+    left: -5%;
+}
+input{
+    width: 250px;
+}
+textarea{
+    width: 500px;
+    
+}
+/* .menu-tap{
+    float: right;
+    background-color: var(--lightPinkColor);
+}
+nav{
+    background-color: var(--whiteColor);
+}
+.navbar-toggler-icon{
+    color:var(--darkBlueColor);
+} */
