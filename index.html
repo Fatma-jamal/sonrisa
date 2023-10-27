@@ -8,12 +8,16 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/regular.min.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet" type="text/css"> -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <link href="assets/css/bootstrap-5.3.2-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <script src="assets/css/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
-     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link href="assets/css/bootstrap-5.3.2-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script src="assets/css/bootstrap-5.3.2-dist/js/bootstrap.js"></script>
+    
+<!-- 
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
 
     <title>Sonrisa</title>
 </head>
@@ -38,10 +42,15 @@
     </div>
     <div class="container-links p-2 fontSize">
     <a href="#" class="me-4">
+      <i class="fa-light fa-phone"></i>
       +654/4715-167
     </a>
-    <a href="#" class="me-5">allsmiles@qodeinteractive.com</a>
-    <a href="#" class="me-5">63 Wall St, New York, NY 10005</a>
+    <a href="#" class="me-5">
+      <i class="fa-solid fa-location-dot"></i>
+      allsmiles@qodeinteractive.com</a>
+    <a href="#" class="me-5">
+      <i class="fa-light fa-location-dot"></i>
+      63 Wall St, New York, NY 10005</a>
     </div>
     
 
@@ -64,8 +73,8 @@
     </div>
     <div class="flex menuIcon-space">
       <a class="navbar-brand search" href="#">search</a>
-    <button type="button" class="menu-icon" data-toggle="collapse" data-target="#showList" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <!-- <button type="button" class="menu-icon" data-toggle="collapse" data-target="#showList" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+      <!-- <span class="navbar-toggler-icon"></span> -->
     </button>
     </div>
     </nav>
@@ -74,90 +83,94 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="assets/img/image.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
+          
         </div>
         <div class="carousel-item">
           <img src="assets/img/image.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
+          
         </div>
         <div class="carousel-item">
           <img src="assets/img/image.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
+         
         </div>
       </div>
       <button class="carousel-control-prev prev-sign" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="carousel-control-prev-icon prevnextSign" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
       <button class="carousel-control-next next-sign" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="carousel-control-next-icon prevnextSign" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+
+      <div class="slidersubPart">
+        <div>
+          <p class="dentalBg rounded-1">dental practice</p>
+        </div>
+        <div>
+          <h1 class="dentalTitle titleSlider">We provide the best services out there</h1>
+        </div>
+        <div>
+          <button type="button" class="btn btn-primary border-0 viewMorebtn">view more</button>
+          <button type="button" class="btn btn-outline-primary border-0 purchaseBtn">purchase</button>
+
+        </div>
+      </div>
     </div>
 
     <!--Cards-->
-    <div class="flex-cards d-flex">
+    <div class="flex-cards d-flex ms-2 me-2">
     <div class="card card1 border-none">
       <img src="assets/img/h1-img-1.jpg.png" class="card-img-top" alt="...">
-      <div class="card-body">
+      <div class="card-body ps-0">
         <h5 class="card-title">Pick the dentist that fits all your need the best</h5>
         <p class="card-text">Lorem ipsum dolor sit amet, eu duo ferri labor. Mea ex
           modo reque senserit, et sed hinc dolor, scaevola sum
           salutandi expetendis vix ne. Eros dicat his sum mel quod
           mundi consequat sum.</p>
       </div>
-      <!-- <ul class="list-group list-group-flush">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-      </ul> -->
-      <div class="card-body">
+     
+      <div class="card-body ps-0">
         <a href="#" class="card-link text-decoration-none">Read more</a>
-        <a href="#" class="card-link">Another link</a>
+        <i class='bx bx-chevron-right'></i>
       </div>
     </div>
 
     <div class="card card2 border-none">
       <img src="assets/img/h1-img-2.jpg.png" class="card-img-top" alt="...">
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item border-0 list-item">Professional dental services 24/7</li>
-        <li class="list-group-item border-0 list-item">Oral hygiene advisory & assessment</li>
-        <li class="list-group-item border-0 list-item">Oral and maxillofacial surgery</li>
-        <li class="list-group-item border-0 list-item">Dental public health insurance</li>
-        <li class="list-group-item border-0 list-item">Free online appointment booking</li>
-        <li class="list-group-item border-0 list-item">Various cosmetic dentistry services</li>
-        <li class="list-group-item border-0 list-item">Special care dentistry services</li>
+      <div class="card-body ps-0">
+      <ul class="list-group list-group-flush ps-0">
+        <li class="list-group-item border-0 list-item ps-0">Professional dental services 24/7</li>
+        <li class="list-group-item border-0 list-item ps-0">Oral hygiene advisory & assessment</li>
+        <li class="list-group-item border-0 list-item ps-0">Oral and maxillofacial surgery</li>
+        <li class="list-group-item border-0 list-item ps-0">Dental public health insurance</li>
+        <li class="list-group-item border-0 list-item ps-0">Free online appointment booking</li>
+        <li class="list-group-item border-0 list-item ps-0">Various cosmetic dentistry services</li>
+        <li class="list-group-item border-0 list-item ps-0">Special care dentistry services</li>
 
       </ul>
+      </div>
     </div>
 
     <div class="card card3">
       <!-- <img src="..." class="card-img-top" alt="..."> -->
-      <div class="card-body">
+      <div class="card-body mb-1">
         <h5 class="card-title text-center fs-3 pt-3">Working Hours</h5>
-      </div>
-      <ul class="list-group list-group-flush border-0">
-        <li class="list-group-item border-0 working-out-list">Monday<span>   ........................................   </span>8AM-7PM</li>
-        <li class="list-group-item border-0 working-out-list">Tuesday<span>   ........................................   </span>8AM-7PM</li>
-        <li class="list-group-item border-0 working-out-list">wednesday<span>   ..................................   </span>8AM-7PM</li>
-        <li class="list-group-item border-0 working-out-list">Thursday<span>   ......................................   </span>8AM-7PM</li>
-        <li class="list-group-item border-0 working-out-list">Friday<span>   ............................................   </span>8AM-7PM</li>
-        <li class="list-group-item border-0 working-out-list">Saturday<span>   ......................................   </span>8AM-7PM</li>
-        <li class="list-group-item border-0 working-out-list">Sunday<span>   ........................................   </span>    CLOSED</li>
+      
+      <ul class="list-group list-group-flush border-0 ps-3 mt-4">
+        <li class="list-group-item border-0 working-out-list">Monday<span>   .....................................................   </span>8AM-7PM</li>
+        <li class="list-group-item border-0 working-out-list">Tuesday<span>   ....................................................   </span>8AM-7PM</li>
+        <li class="list-group-item border-0 working-out-list">Wednesday<span>   ...............................................   </span>8AM-7PM</li>
+        <li class="list-group-item border-0 working-out-list">Thursday<span>   ....................................................   </span>8AM-7PM</li>
+        <li class="list-group-item border-0 working-out-list">Friday<span>   ..........................................................   </span>8AM-7PM</li>
+        <li class="list-group-item border-0 working-out-list">Saturday<span>   ....................................................   </span>8AM-7PM</li>
+        <li class="list-group-item border-0 working-out-list">Sunday<span>   .........................................................   </span>    CLOSED</li>
 
       </ul>
+    </div>
       <div class="card-body call-us p-0 mt-4">
         <!-- <div class="w-100 text-center text-white call-us">Call Us: +354/759-1675</div> -->
-          <button class="btn btn-primary w-100 h-100" type="button">Call Us: +354/759-1675</button>
+          <button class="btn btn-primary w-100 h-100 rounded-0 fs-5" type="button">Call Us: +354/759-1675</button>
       </div>
     </div>
     </div>
@@ -228,12 +241,12 @@
 
     <!---->
     <div class="d-flex w-100">
-    <div class="card w-50 border-none dentalCard" style="width: 18rem;">
-      <div class="card-body p-5">
+    <div class="card w-50 border-none dentalCard">
+      <div class="card-body dentalCardBody">
         <h6 class="card-text dentalSub">DENTAL PRACTICE</h6>
-        <h5 class="card-title">Fully dedicated to your
+        <h5 class="card-title dentalHeader">Fully dedicated to your
           dental health</h5>
-        <p class="card-text dentalText">Te veritus tractatos delicatissimi qui, justo diceret mentitum ut sit. Qui sed
+        <p class="card-text dentalText w-75">Te veritus tractatos delicatissimi qui, justo diceret mentitum ut sit. Qui sed
           reque dicam, qui veri nullam vituperatoribus in. Tibique maiestatis sum
           quod sum ut alienum nec et, summo possim persequeris vix mea. Adhuc
           quodsi qui, sit no tale essent electram. Mei sum prodesset in pro, quo
@@ -241,8 +254,9 @@
           <h5 class="card-text andrea">Andrea McCollins</h5>
       </div>
     </div>
-    <div class="card w-50 border-none" style="width: 18rem;">
-      <img src="assets/img/div.elementor-column-wrap.png" class="card-img-top dentalCard-img" alt="...">
+    <div class="card w-50 border-none">
+      <img src="assets/img/div.elementor-column-wrap.png" class="card-img-top dentalCard-img h-100 rounded-0" alt="...">
+      <i class='bx bx-play-circle'></i>
     </div>
     </div>
 
@@ -255,100 +269,123 @@
     <div id="carouselExampleIndicators" class="carousel slide" >
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="card-contain d-flex flex-cards">
-          <div class="card border-none" style="width: 18rem;">
+          <div class="card-contain d-flex flex-cards w-75">
+          <div class="card border-none" style="width: 40rem;">
             <img src="assets/img/h1-testimonials-img-2-1.png.png" class="card-img-top" alt="...">
+              <i class="bx bxs-quote-right qouteIcon"></i>
             <div class="card-body">
               <h5 class="card-title text-center">Quick, easy & reliable</h5>
               <p class="card-text text-center">Duis sed odio sit amet nibh vulputate cursus a sit am
 mauris. Morbi accumsan sum ipsum velit. Nam nec
 tellus am od tincidunt auctor.</p>
-               <p class="card-text text-center dentalSub">JENNA JOHNSON</p>
+               <h6 class="card-text text-center dentalSub">JENNA JOHNSON</h6>
             </div>
           </div>
-          <div class="card border-none" style="width: 18rem;">
+          <div class="card border-none" style="width: 40rem;">
             <img src="assets/img/h1-testimonials-img-1-1.png.png" class="card-img-top" alt="...">
+            <i class="bx bxs-quote-right qouteIcon"></i>
             <div class="card-body">
               <h5 class="card-title text-center">The best clinic in town</h5>
               <p class="card-text text-center">Duis sed odio sit amet nibh vulputate cursus a sit am
 mauris. Morbi accumsan sum ipsum velit. Nam nec
 tellus am od tincidunt auctor.</p>
-              <p class="card-text text-center dentalSub">ROBERT LOGAN</p>
+              <h6 class="card-text text-center dentalSub">ROBERT LOGAN</h6>
             </div>
           </div>
-          <div class="card border-none" style="width: 18rem;">
+          <div class="card border-none" style="width: 40rem;">
             <img src="assets/img/h1-testimonials-img-3-1.png.png" class="card-img-top" alt="...">
+            <i class="bx bxs-quote-right qouteIcon"></i>
             <div class="card-body">
               <h5 class="card-title text-center">The true professionals</h5>
  <p class="card-text text-center">Duis sed odio sit amet nibh vulputate cursus a sit am
 mauris. Morbi accumsan sum ipsum velit. Nam nec
 tellus am od tincidunt auctor.</p>
-              <p class="card-text text-center dentalSub">AUGUST JOHNS</p>
+              <h6 class="card-text text-center dentalSub">AUGUST JOHNS</h6>
             </div>
           </div>
           </div>
         </div>
         <div class="carousel-item">
-          <div class="card-contain d-flex flex-cards">
-            <div class="card" style="width: 18rem;">
+          <div class="card-contain d-flex flex-cards w-75">
+            <div class="card border-none" style="width: 40rem;">
               <img src="assets/img/h1-testimonials-img-2-1.png.png" class="card-img-top" alt="...">
+                <i class="bx bxs-quote-right qouteIcon"></i>
               <div class="card-body">
-                <h5 class="card-title text-center">Card title</h5>
-                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title text-center">Quick, easy & reliable</h5>
+                <p class="card-text text-center">Duis sed odio sit amet nibh vulputate cursus a sit am
+  mauris. Morbi accumsan sum ipsum velit. Nam nec
+  tellus am od tincidunt auctor.</p>
+                 <h6 class="card-text text-center dentalSub">JENNA JOHNSON</h6>
               </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card border-none" style="width: 40rem;">
               <img src="assets/img/h1-testimonials-img-1-1.png.png" class="card-img-top" alt="...">
+              <i class="bx bxs-quote-right qouteIcon"></i>
               <div class="card-body">
-                <h5 class="card-title text-center">Card title</h5>
-                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title text-center">The best clinic in town</h5>
+                <p class="card-text text-center">Duis sed odio sit amet nibh vulputate cursus a sit am
+  mauris. Morbi accumsan sum ipsum velit. Nam nec
+  tellus am od tincidunt auctor.</p>
+                <h6 class="card-text text-center dentalSub">ROBERT LOGAN</h6>
               </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card border-none" style="width: 40rem;">
               <img src="assets/img/h1-testimonials-img-3-1.png.png" class="card-img-top" alt="...">
+              <i class="bx bxs-quote-right qouteIcon"></i>
               <div class="card-body">
-                <h5 class="card-title text-center">Card title</h5>
-                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title text-center">The true professionals</h5>
+   <p class="card-text text-center">Duis sed odio sit amet nibh vulputate cursus a sit am
+  mauris. Morbi accumsan sum ipsum velit. Nam nec
+  tellus am od tincidunt auctor.</p>
+                <h6 class="card-text text-center dentalSub">AUGUST JOHNS</h6>
               </div>
             </div>
-            </div>        </div>
+            </div>
+            </div>
         <div class="carousel-item">
-          <div class="card-contain d-flex flex-cards">
-            <div class="card" style="width: 18rem;">
+          <div class="card-contain d-flex flex-cards w-75">
+            <div class="card border-none" style="width: 40rem;">
               <img src="assets/img/h1-testimonials-img-2-1.png.png" class="card-img-top" alt="...">
+                <i class="bx bxs-quote-right qouteIcon"></i>
               <div class="card-body">
-                <h5 class="card-title text-center">Card title</h5>
-                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title text-center">Quick, easy & reliable</h5>
+                <p class="card-text text-center">Duis sed odio sit amet nibh vulputate cursus a sit am
+  mauris. Morbi accumsan sum ipsum velit. Nam nec
+  tellus am od tincidunt auctor.</p>
+                 <h6 class="card-text text-center dentalSub">JENNA JOHNSON</h6>
               </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card border-none" style="width: 40rem;">
               <img src="assets/img/h1-testimonials-img-1-1.png.png" class="card-img-top" alt="...">
+              <i class="bx bxs-quote-right qouteIcon"></i>
               <div class="card-body">
-                <h5 class="card-title text-center">Card title</h5>
-                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title text-center">The best clinic in town</h5>
+                <p class="card-text text-center">Duis sed odio sit amet nibh vulputate cursus a sit am
+  mauris. Morbi accumsan sum ipsum velit. Nam nec
+  tellus am od tincidunt auctor.</p>
+                <h6 class="card-text text-center dentalSub">ROBERT LOGAN</h6>
               </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card border-none" style="width: 40rem;">
               <img src="assets/img/h1-testimonials-img-3-1.png.png" class="card-img-top" alt="...">
+              <i class="bx bxs-quote-right qouteIcon"></i>
               <div class="card-body">
-                <h5 class="card-title text-center">Card title</h5>
-                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <h5 class="card-title text-center">The true professionals</h5>
+   <p class="card-text text-center">Duis sed odio sit amet nibh vulputate cursus a sit am
+  mauris. Morbi accumsan sum ipsum velit. Nam nec
+  tellus am od tincidunt auctor.</p>
+                <h6 class="card-text text-center dentalSub">AUGUST JOHNS</h6>
               </div>
             </div>
-            </div>        </div>
+            </div>
+                  </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="carousel-control-prev-icon prevnextSign" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="carousel-control-next-icon prevnextSign" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
@@ -368,9 +405,23 @@ tellus am od tincidunt auctor.</p>
     </div>
 
     <!---->
-    <div class="tabs-container">
+    <div class="tabs-container" id="tabs">
       <div>
-
+        <ul class="nav nav-underline">
+          <li class="nav-item">
+            <a class="nav-link active nav-tab" aria-current="page" href="#">Root Canal Specialist</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-tab" href="#">Alignment Specialist
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-tab" href="#">Cosmetic Dentistry</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-tab" href="#">Live Dental Advisory</a>
+          </li>
+        </ul>
       </div>
     <div class="d-flex card-tabs pt-4">
     <div class="card border-none" style="width: 30rem;">
@@ -395,12 +446,12 @@ tellus am od tincidunt auctor.</p>
   </div>
 
   <!---->
-  <h6 class="dentalSub text-center mt-5">THE ALLSMILES TEAM</h6>
+  <h6 class="dentalSub text-center mt-5 pt-5">THE ALLSMILES TEAM</h6>
   <h1 class="text-center dentalTitle">Meet Our Experts</h1>
-  <p class="text-center dentalText">An delicata inimicus sea, vis equidem oporteat conclusion mundi et. Nec malis dolor
+  <p class="text-center dentalText dentalTextPlace ms-auto me-auto">An delicata inimicus sea, vis equidem oporteat conclusion mundi et. Nec malis dolor
     fabellas ex, eu nec falli iuvaret. Per elitr eloquentiam an esse.</p>
 
-  <div class="d-flex ms-auto me-auto flex-prop">
+  <div class="d-flex ms-auto me-auto flex-prop pt-5">
     <div class="card border-0 ms-4 me-4" style="width: 15rem;">
       <img src="assets/img/team-img-1.jpg.png" class="card-img-top rounded-0" alt="...">
       <div class="card-body">
@@ -487,7 +538,10 @@ tellus am od tincidunt auctor.</p>
         <h5 class="card-title">All about invisalign</h5>
         <p class="card-text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
           consequat ipsum, nec sagittis sem nibh mel integre facilis.</p>
-        <a href="#" class="">READ MORE</a>
+          <div class="card-body ps-0">
+            <a href="#" class="card-link text-decoration-none">Read more</a>
+            <i class='bx bx-chevron-right'></i>
+          </div>
       </div>
     </div>
     <div class="card me-4 border-0" style="width: 25rem;">
@@ -497,7 +551,10 @@ tellus am od tincidunt auctor.</p>
         <h5 class="card-title">Braces for teens</h5>
         <p class="card-text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
           consequat ipsum, nec sagittis sem nibh mel integre facilis.</p>
-        <a href="#" class="">READ MORE</a>
+          <div class="card-body ps-0">
+            <a href="#" class="card-link text-decoration-none">Read more</a>
+            <i class='bx bx-chevron-right'></i>
+          </div>
       </div>
     </div>
     <div class="card border-0" style="width: 25rem;">
@@ -507,7 +564,10 @@ tellus am od tincidunt auctor.</p>
         <h5 class="card-title">Dental association</h5>
         <p class="card-text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
           consequat ipsum, nec sagittis sem nibh mel integre facilis.</p>
-        <a href="#" class="">READ MORE</a>
+          <div class="card-body ps-0">
+            <a href="#" class="card-link text-decoration-none">Read more</a>
+            <i class='bx bx-chevron-right'></i>
+          </div>
       </div>
     </div>
   </div>

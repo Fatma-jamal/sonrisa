@@ -7,6 +7,7 @@
     --lightBlueColor:#eef7ff;
     --darkRedColor:#dd3333;
     --whiteColor:white;
+    --moredarkgray:#706e6e;
 }
 .menu-icon{
     background-color: var(--lightPinkColor);
@@ -84,15 +85,22 @@
     margin: 15px;
     width: 32rem;
 }
-/* .prev-sign{
-    background-color: var(--whiteColor);
-    color: var(--darkBlueColor);
-} */
+.dentalCardBody{
+    padding-top: 20%;
+    padding-left: 15%;
+}
+.dentalHeader{
+    font-size: 30px;
+    width: 400px;
+}
 .card-title,.card-link,.search,.dentalTitle{
     color: var(--darkBlueColor);
 }
-.card-text,.list-group-item{
+.card-text{
     color: var(--darkGrayColor);
+}
+.list-group-item{
+    color: var(--moredarkgray);
 }
 .card-link{
     text-decoration: none;
@@ -121,9 +129,20 @@
 }
 .dentalCard{
     background-color: var(--lightBlueColor);
+    height: 520px;
 }
 .dentalCard-img{
     border-radius: var(--bs-border-radius);
+}
+.bx-play-circle{
+    position: absolute;
+    color: var(--orangeColor);
+    font-size: 70px;
+    left: 45%;
+    top:42%;
+    outline: 3px solid white;
+    border-radius: 50%;
+   
 }
 .dentalSub,.expertsSub{
     color: var(--darkRedColor);
@@ -171,7 +190,7 @@
     background-color: var(--lightPinkColor);
 
 }
-.shareIcon{
+.shareIcon,.qouteIcon{
     background-color: var(--darkBlueColor);
     color: var(--whiteColor);
     width: 35px;
@@ -181,6 +200,8 @@
     padding-top: 9px;
     border-radius: 4px;
     position: absolute;
+}
+.shareIcon{
     top:5%;
     left: -5%;
 }
@@ -203,13 +224,57 @@ textarea{
 .footer-dental{
     background-color: var(--lightPinkColor);
 }
-/* .menu-tap{
-    float: right;
-    background-color: var(--lightPinkColor);
+.qouteIcon{
+    left: 60%;
 }
-nav{
+.prevnextSign{
+    background-color: var(--darkBlueColor);
+    opacity: 2;
+}
+.viewMorebtn,.purchaseBtn{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.purchaseBtn{
+    color: var(--darkBlueColor);
     background-color: var(--whiteColor);
 }
-.navbar-toggler-icon{
-    color:var(--darkBlueColor);
-} */
+.dentalBg{
+    background-color: var(--orangeColor);
+    color: var(--whiteColor);
+    text-transform: uppercase;
+    width: fit-content;
+    padding: 5px;
+}
+.titleSlider{
+    background-color: var(--whiteColor);
+    width: 400px;
+    padding: 10px;
+}
+.slidersubPart{
+    position: absolute;
+    top:20%;
+    left: 15%;
+}
+.bx-chevron-right{
+    color: var(--darkBlueColor);
+    font-size: 40px;
+    border:1px dashed var(--darkBlueColor);
+    border-top-right-radius:none;
+    /* border-top-left-radius: 1px solid var(--darkBlueColor);
+    border-bottom-right-radius: 1px solid var(--darkBlueColor);
+    border-bottom-left-radius: 1px solid var(--darkBlueColor); */
+    border-radius: 50%;
+    margin-left: 10px;
+
+}
+.nav-tab:link{
+    color: var(--darkBlueColor);
+
+}
+.dentalTextPlace{
+    width: 600px;
+}
