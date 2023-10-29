@@ -8,6 +8,7 @@
     --darkRedColor:#dd3333;
     --whiteColor:white;
     --moredarkgray:#706e6e;
+    --lightGray:rgb(138, 136, 136);
 }
 .menu-icon{
     background-color: var(--lightPinkColor);
@@ -205,13 +206,23 @@
     top:5%;
     left: -5%;
 }
-input{
+/* input{
     width: 200px;
     
-}
-textarea{
-    width: 420px;
+} */
+.form-control textarea{
+    width: 400px;
     
+}
+.form-control{
+    background-color: var(--lightBlueColor);
+    width: inherit;
+}
+.form-control::placeholder{
+    color: var(--lightGray);
+}
+.form-control input{
+    width: 200px;
 }
 .form-container,.form-container .card,input{
     background-color: var(--lightBlueColor);
@@ -251,7 +262,7 @@ textarea{
 }
 .titleSlider{
     background-color: var(--whiteColor);
-    width: 400px;
+    width:fit-content;
     padding: 10px;
 }
 .slidersubPart{
@@ -277,4 +288,12 @@ textarea{
 }
 .dentalTextPlace{
     width: 600px;
+}
+.tabs-list{
+    margin-left: 25%;
+
+}
+.nav-link.active{
+    color: var(--darkBlueColor);
+    border-bottom-color: var(--darkPinkColor);
 }
